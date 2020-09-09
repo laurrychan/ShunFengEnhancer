@@ -2,7 +2,7 @@
 // @name         ShunFengEnhancer
 // @icon         https://www.sf-express.com/.gallery/favicon.ico
 // @homepage     https://github.com/maoger/ShunFengEnhancer
-// @version      0.4
+// @version      0.4.1
 // @description  Tools for ShunFeng website.
 // @author       Maoger
 // @match        http*://*.sf-express.com/*
@@ -22,7 +22,7 @@ btn_show.style = "position:fixed;bottom:50%;right:15px;width:60px;height:60px;ba
 var btn_webshot = document.createElement("div");
 tag_body.appendChild(btn_webshot);
 btn_webshot.innerHTML = "截图";
-btn_webshot.style = "position:fixed;bottom:45%;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
+btn_webshot.style = "position:fixed;bottom:40%;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
 
 function show_routes(){
     document.getElementsByClassName("routes-wrapper")[0].style = "max-height:100%";
