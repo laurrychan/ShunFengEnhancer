@@ -2,7 +2,7 @@
 // @name         ShunFengEnhancer
 // @icon         https://www.sf-express.com/.gallery/favicon.ico
 // @homepage     https://github.com/maoger/ShunFengEnhancer
-// @version      0.4.1
+// @version      0.5
 // @description  Tools for ShunFeng website.
 // @author       Maoger
 // @match        http*://*.sf-express.com/*
@@ -51,9 +51,13 @@ function webshot(){
         }
     });
 }
+
 btn_webshot.onclick = function(){
-    // this.style.display = "none";
+    this.style.display = "none";
+    btn_show.style.display = "none";
     webshot();
+    setTimeout(function(){
+        btn_webshot.style.display = "block";
+        btn_show.style.display = "block";
+    },2000)
 };
-
-
