@@ -2,6 +2,7 @@
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+temp/
 
 # My configurations:
 test*.js
