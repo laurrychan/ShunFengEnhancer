@@ -1,15 +1,16 @@
-# ShunFengEnhancer
+# ShunFengEnhancer - 顺丰助手
 
 ![ShunFengEnhancer](./media/ShunFengEnhancer.gif)
 
-## 0.3
-* Date: 2020-09-09
-* 展开所有快递轨迹信息。
+## 功能
 
-## 0.4
-* Date: 2020-09-09
-* 增加：全屏截图。
+- 展开：全屏展开显示快递轨迹信息
+- 截图：全屏截图
 
-## 0.5
-* Date: 2020-09-09
-* 优化：全屏截图时，先隐藏button，截完图后再显示。
+## 更新日志
+
+[Changelog](./Changelog.md)
+
+## 免责声明
+
+本代码仅供技术交流，请勿用于商业及非法用途，如产生法律纠纷与本人无关。
