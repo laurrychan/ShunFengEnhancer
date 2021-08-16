@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.5.3] - 2020-08-16
+### Removed
+  - 删除：`UserScript.js`
+
 ## [0.5.2] - 2020-08-15
 ### Added
   - 新增：1个参数`@run-at`

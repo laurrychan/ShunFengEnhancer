@@ -2,7 +2,7 @@
 // @name         ShunFengEnhancer
 // @icon         https://www.sf-express.com/.gallery/favicon.ico
 // @homepage     https://github.com/maoger/ShunFengEnhancer
-// @version      0.5.2
+// @version      0.5.3
 // @description  顺丰助手
 // @author       Maoger
 // @match        http*://*.sf-express.com/*
