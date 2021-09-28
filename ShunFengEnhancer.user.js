@@ -2,7 +2,7 @@
 // @name         ShunFengEnhancer
 // @icon         https://www.sf-express.com/.gallery/favicon.ico
 // @homepage     https://github.com/maoger/ShunFengEnhancer
-// @version      0.5.3
+// @version      0.5.4
 // @description  顺丰助手
 // @author       Maoger
 // @match        http*://*.sf-express.com/*
@@ -14,17 +14,23 @@
 // @license      MIT
 // ==/UserScript==
 
+var currentHeight = document.body.clientHeight;
+var showHeight = currentHeight / 2 - 35;
+var screenshotHeight = showHeight + 70;
 var btn_show = document.createElement("div");
 var tag_body = document.querySelector("body");
 tag_body.appendChild(btn_show);
 btn_show.innerHTML = "展开";
-btn_show.style = "position:fixed;bottom:50%;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
+btn_show.style = "position:fixed;z-index:999;top:" + showHeight.toString() + "px;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
 var btn_webshot = document.createElement("div");
 tag_body.appendChild(btn_webshot);
 btn_webshot.innerHTML = "截图";
-btn_webshot.style = "position:fixed;bottom:40%;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
+btn_webshot.style = "position:fixed;z-index:999;top:" + screenshotHeight.toString() + "px;right:15px;width:60px;height:60px;background:black;opacity:0.75;color:white;text-align:center;line-height:60px;cursor:pointer;";
 function show_routes(){
-    document.getElementsByClassName("routes-wrapper")[0].style = "max-height:100%";
+    var eles = document.getElementsByClassName("routes-wrapper");
+    for(var i=0;i<eles.length; i++){
+        eles[i].style = "max-height:100%";
+    }
 }
 btn_show.onclick = function(){
     this.style.display = "none";
